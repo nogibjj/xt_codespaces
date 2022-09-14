@@ -3,4 +3,13 @@ numpy
 pandas
 seaborn
 openai
+pytest
 pylint
+fastapi
+ipython
+click
+databricks
+databricks-cli
+databricks-sql-connector
+databricks-connect==10.4.*
+uvicorn[standard]
