@@ -2,7 +2,7 @@
 Codespaces for IDS706
 
 <h3>Architectural Diagram</h3>
-![Architecturl Diagram](architecture_pic.png)
+<img src="architecture_pic.png" alt="Alt text" title="Optional title">
 
 
 
