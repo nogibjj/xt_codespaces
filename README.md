@@ -2,11 +2,11 @@
 Codespaces for IDS706
 
 <h3>Architectural Diagram</h3>
-![Architecturl Diagram](https://github.com/nogibjj/xt_codespaces/blob/Project01/architecture_pic.png)
+![Architecturl Diagram](architecture_pic.png)
 
 
 
-<h3> Project Desciprtion</h3>
+<h3> Project Description</h3>
  This project uses Python CLI API to query data which is store in Azure DataBricks.
   <h4> Tool Used</h4>
     Azure DataBricks - data storage <br>
