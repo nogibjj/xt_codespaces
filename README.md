@@ -2,7 +2,7 @@
 Codespaces for IDS706
 
 <h3>Architectural Diagram</h3>
-[![Architecturl Diagram](architecture_pic.png "Magic Gardens")](https://github.com/nogibjj/xt_codespaces/blob/Project01/architecture_pic.png)
+![Architecturl Diagram](https://github.com/nogibjj/xt_codespaces/blob/Project01/architecture_pic.png)
 
 
 
