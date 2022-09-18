@@ -1,4 +1,6 @@
 # xt_codespaces
+![Actions](https://github.com/nogibjj/xt_codespaces/actions/workflows/main.yml/badge.svg)
+
 Codespaces for IDS706
 
 <h3>Architectural Diagram</h3>
