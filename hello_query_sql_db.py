@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 
+
 import click
 from dblib.querydb import querydb
 from dblib.querydb import find_most_least_year
+from dblib.querydb import find_data_intro
+from dblib.querydb import amount_increase
 
 # build a click group
 @click.group()
@@ -29,8 +32,22 @@ def query_year(year):
     find_most_least_year(year)
 
 
+@cli.command()
+# @click.option("--intro", help="introduce your dataset :)")
+def data_intro():
+    find_data_intro()
+
+@click.command()
+@click.option('--years', nargs=2, type=int)
+def year_change(years):
+    a, b = years
+    click.echo(f"{a} / {b}")
+    amount_increase(a, b)
+
 # run the CLI
 if __name__ == "__main__":
     cli.add_command(cli_query)
     cli.add_command(query_year)
+    cli.add_command(data_intro)
+    cli.add_command(year_change)
     cli()
