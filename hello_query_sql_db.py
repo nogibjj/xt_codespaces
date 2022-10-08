@@ -37,12 +37,14 @@ def query_year(year):
 def data_intro():
     find_data_intro()
 
+
 @click.command()
-@click.option('--years', nargs=2, type=int)
+@click.option("--years", nargs=2, type=int)
 def year_change(years):
     a, b = years
     click.echo(f"{a} / {b}")
     amount_increase(a, b)
+
 
 # run the CLI
 if __name__ == "__main__":
