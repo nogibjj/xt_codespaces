@@ -4,7 +4,7 @@
 This is the repo of IDS706 project 2. This project is about query a dataset from kaggle in bash file. The dataset is now store in Databricks.
 
 ## Architectural Diagram
-<img src="architecture_pic.png" alt="Alt text" title="Optional title">
+<img src="project02.png" alt="Alt text" title="Optional title">
 
 ## Installation
 Make sure you can access Databricks in codespaces
