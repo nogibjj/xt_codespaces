@@ -1,16 +1,18 @@
-# xt_codespaces
+# Bash Command Tool
 ![Actions](https://github.com/nogibjj/xt_codespaces/actions/workflows/main.yml/badge.svg)
 
-Codespaces for IDS706
+This is the repo of IDS706 project 2. This project is about query a dataset from kaggle in bash file. The dataset is now store in Databricks.
 
-<h3>Architectural Diagram</h3>
+## Architectural Diagram
 <img src="architecture_pic.png" alt="Alt text" title="Optional title">
 
+## Installation
+Make sure you can access Databricks in codespaces
+```bash
+sh command.sh
+```
 
-
-<h3> Project Description</h3>
- This project uses Python CLI API to query data which is store in Azure DataBricks.
-  <h4> Tool Used</h4>
+## Tool Used
     Azure DataBricks - data storage <br>
     Python CLI - Faciliate command line argument <br>
     Pylint - check code quality <br>
