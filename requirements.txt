@@ -4,3 +4,5 @@ pandas
 seaborn
 openai
 pylint
+ipywidgets
+jupyter_contrib_nbextensions
