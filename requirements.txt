@@ -6,3 +6,4 @@ openai
 pylint
 ipywidgets
 jupyter_contrib_nbextensions
+streamlit
