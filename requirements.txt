@@ -7,3 +7,12 @@ pylint
 ipywidgets
 jupyter_contrib_nbextensions
 streamlit
+plotly
+streamlit-option-menu
+pymongo[srv]
+click
+databricks
+databricks-cli
+databricks-sql-connector
+databricks-connect==10.4.*
+uvicorn[standard]
