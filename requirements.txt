@@ -10,6 +10,10 @@ streamlit
 plotly
 streamlit-option-menu
 pymongo[srv]
+pytest
+pylint
+fastapi
+ipython
 click
 databricks
 databricks-cli
