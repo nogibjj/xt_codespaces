@@ -1,4 +1,4 @@
-# SQL query website
+# SQL query website - Netflix Query Hub
 ![Actions](https://github.com/nogibjj/xt_codespaces/actions/workflows/main.yml/badge.svg)
 
 This is the repo of IDS706 project 3. This project is about SQL query a dataset from kaggle and then plot the line chart using streamlit. The dataset is now store in Databricks.
