@@ -10,7 +10,6 @@ def querydb(query="SELECT * FROM default.netflix_1_csv LIMIT 2"):
     ) as connection:
 
         with connection.cursor() as cursor:
-<<<<<<< HEAD
             print("Executing: " + query);
             cursor.execute(query)
             result = cursor.fetchall()
@@ -60,17 +59,11 @@ def amount_year_category(year, category):
     query = "select count(Name) from default.netflix_1_csv  where Year=" + str(year) + " and Category=" + "'" + category + "'"
     res = querydb(query)
     return res[0][0]
-=======
-            cursor.execute(query)
-            result = cursor.fetchall()
-
-        for row in result:
-            print(row)
-
-    return result
 
 def find_most_least_year(year):
+    print("------------------")
     query = "select Name, Age_Rating, Duration from default.netflix_1_csv where Year=" + str(year) + " LIMIT 5"
     print("now searching: "+query)
-    querydb(query)
->>>>>>> origin/project2
+    result = querydb(query)
+    for row in result:
+        print(row)
