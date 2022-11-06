@@ -4,7 +4,7 @@
 This is the repo of IDS706 project 3. This project is about SQL query a dataset from kaggle and then plot the line chart using streamlit. The dataset is now store in Databricks.
 
 ## Architectural Diagram
-<img src="project02.png" alt="Alt text" title="Optional title">
+<img src="project03.png" alt="Alt text" title="Optional title">
 
 ## Workflow
 Two main functions are supported here : first insert into database, second sql query result visualization
