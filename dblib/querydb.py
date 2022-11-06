@@ -1,5 +1,5 @@
-from databricks import sql
 import os
+from databricks import sql
 
 
 def querydb(query="SELECT * FROM default.netflix_1_csv LIMIT 2"):
@@ -59,11 +59,3 @@ def amount_year_category(year, category):
     query = "select count(Name) from default.netflix_1_csv  where Year=" + str(year) + " and Category=" + "'" + category + "'"
     res = querydb(query)
     return res[0][0]
-
-def find_most_least_year(year):
-    print("------------------")
-    query = "select Name, Age_Rating, Duration from default.netflix_1_csv where Year=" + str(year) + " LIMIT 5"
-    print("now searching: "+query)
-    result = querydb(query)
-    for row in result:
-        print(row)
