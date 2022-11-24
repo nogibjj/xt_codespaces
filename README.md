@@ -1,15 +1,18 @@
-# Bash Command Tool
+# SQL query website - Netflix Query Hub
 ![Actions](https://github.com/nogibjj/xt_codespaces/actions/workflows/main.yml/badge.svg)
 
-This is the repo of IDS706 project 2. This project is about query a dataset from kaggle in bash file. The dataset is now store in Databricks.
+This is the repo of IDS706 project 3. This project is about SQL query a dataset from kaggle and then plot the line chart using streamlit. The dataset is now store in Databricks.
 
 ## Architectural Diagram
-<img src="project02.png" alt="Alt text" title="Optional title">
+<img src="project03.png" alt="Alt text" title="Optional title">
 
-## Installation
+## Workflow
+Two main functions are supported here : first insert into database, second sql query result visualization
+
+## How to Run
 Make sure you can access Databricks in codespaces
 ```bash
-sh command.sh
+streamlit run app.py --server.enableCORS false --server.enableXsrfProtection false
 ```
 
 ## Tool Used
@@ -18,3 +21,4 @@ sh command.sh
     Pylint - check code quality <br>
     Python format - format code <br>
     FASTAPI - send http request to query database <br>
+    Streamlit - insert sql query into database and compare the amounts of two different categories using line chard <br>

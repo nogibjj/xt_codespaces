@@ -11,11 +11,12 @@ def querydb(query="SELECT * FROM default.netflix_1_csv LIMIT 2"):
     ) as connection:
 
         with connection.cursor() as cursor:
+            print("Executing: " + query);
             cursor.execute(query)
             result = cursor.fetchall()
 
-        # for row in result:
-        #     print(row)
+        for row in result:
+            print(row)
 
     return result
 
@@ -54,3 +55,8 @@ def amount_increase(start, end):
     num1 = float(result1[0][0])
     num2 = float(result2[0][0])
     print("The number changes " + str((num2-num1)/num1*100) + "%")
+
+def amount_year_category(year, category):
+    query = "select count(Name) from default.netflix_1_csv  where Year=" + str(year) + " and Category=" + "'" + category + "'"
+    res = querydb(query)
+    return res[0][0]

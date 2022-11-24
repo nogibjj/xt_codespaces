@@ -3,6 +3,13 @@ numpy
 pandas
 seaborn
 openai
+pylint
+ipywidgets
+jupyter_contrib_nbextensions
+streamlit
+plotly
+streamlit-option-menu
+pymongo[srv]
 pytest
 pylint
 fastapi
