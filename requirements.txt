@@ -11,7 +11,10 @@ plotly
 streamlit-option-menu
 pymongo[srv]
 pytest
-pylint
+robotframework
+robotframework-SeleniumLibrary
+selenium
+coverage
 fastapi
 ipython
 click
