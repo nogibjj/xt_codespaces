@@ -6,7 +6,6 @@ from streamlit_option_menu import option_menu  # pip install streamlit-option-me
 from request import get_activity
 # from dblib.querydb import querydb
 # from dblib.querydb import amount_year_category
-import pandas as pd
 
 
 # -------------- SETTINGS --------------
