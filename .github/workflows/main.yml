@@ -14,7 +14,7 @@ env:
 permissions:
   id-token: write
   contents: read
-  
+
 jobs:
   build:
 
@@ -37,6 +37,18 @@ jobs:
         
     - name: Configure AWS credentails
       uses: aws-actions/configure-aws-credentials@v1
+      run:
+          mkdir -p ~/.aws
+          touch ~/.aws/credentials
+
+          echo "[default]
+          aws_access_key_id = ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key = ${{ secrets.AWS_SECRET_KEY_ID }}
+          region = ${AWS_DEFAULT_REGION}
+
+          [github]
+          role_arn = arn:aws:iam::{accountID}:role/{role}
+          source_profile = default" > ~/.aws/credentials 
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
