@@ -17,8 +17,8 @@ streamlit run app.py --server.enableCORS false --server.enableXsrfProtection fal
 ```
 
 ## Tool Used
-    <br>Pylint - check code quality </br>
-    <br>Python format - format code <br>
-    <br>Pytest - test code </br>
-    <br>Streamlit - let user enter the specific API they want to query </br>
-    <br> AWS ecr, ecs - automatic deployment </br>
+    Pylint - check code quality
+    Python format - format code
+    Pytest - test code
+    Streamlit - let user enter the specific API they want to query
+    AWS ecr, ecs - automatic deployment
